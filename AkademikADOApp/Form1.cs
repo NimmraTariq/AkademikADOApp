@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Provides basic classes and base functionality of .NET
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
