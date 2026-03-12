@@ -28,7 +28,7 @@ namespace AkademikADOApp
         {
 
         }
-
+        // btnConnect opens the SQL connection
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -48,7 +48,7 @@ namespace AkademikADOApp
         {
 
         }
-
+        // btnDisconnect closes the SQL connection
         private void btnDisconnect_Click(object sender, EventArgs e)
         {
             try
