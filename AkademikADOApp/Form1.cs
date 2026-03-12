@@ -12,15 +12,14 @@ using System.Windows.Forms;
 
 namespace AkademikADOApp
 {
-    public partial class Form1 : Form
+    public partial class DatabaseConnectionForm : Form
     {
-        // Connection String
-        string connString =
-        "Data Source=DESKTOP-RAM20FI\\APRILIYA;Initial Catalog=DBAkademikADO;Integrated Security=True";
+        // Use your new server name with DOUBLE backslashes
+        string connString = "Data Source=DESKTOP-8BL3MIG\\NIMRA;Initial Catalog=DBAkademikADO;Integrated Security=True";
 
         // Object SqlConnection
         SqlConnection conn;
-        public Form1()
+        public DatabaseConnectionForm()
         {
             InitializeComponent();
         }
@@ -30,7 +29,7 @@ namespace AkademikADOApp
 
         }
 
-        private void btnConnect_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -45,9 +44,23 @@ namespace AkademikADOApp
             }
         }
 
-        private void lblStatus_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDisconnect_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Close();
+                lblStatus.Text = "Status : Database Disconnected";
+                MessageBox.Show("Disconnected from database!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
+            }
         }
     }
 }

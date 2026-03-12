@@ -1,6 +1,6 @@
 ﻿namespace AkademikADOApp
 {
-    partial class Form1
+    partial class DatabaseConnectionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -55,6 +55,7 @@
             this.btnDisconnect.TabIndex = 1;
             this.btnDisconnect.Text = "Disconnect Database";
             this.btnDisconnect.UseVisualStyleBackColor = false;
+            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
             // 
             // lblStatus
             // 
@@ -68,7 +69,7 @@
             this.lblStatus.Text = "Status";
             this.lblStatus.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // DatabaseConnectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,7 +77,7 @@
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.btnConnect);
-            this.Name = "Form1";
+            this.Name = "DatabaseConnectionForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
