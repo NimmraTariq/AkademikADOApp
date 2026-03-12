@@ -55,7 +55,7 @@ namespace AkademikADOApp
             {
                 conn.Close();
                 lblStatus.Text = "Status : Database Disconnected";
-                MessageBox.Show("Disconnected from database!");
+                MessageBox.Show("Disconnected from database!"); 
             }
             catch (Exception ex)
             {
