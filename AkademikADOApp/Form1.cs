@@ -1,9 +1,8 @@
-﻿// Provides basic classes and base functionality of .NET
-using System;
+﻿using System; // Provides basic classes and base functionality of .NET
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SqlClient; // Provides classes to connect and work with SQL Server databases
 using System.Drawing;
 using System.Linq;
 using System.Text;
